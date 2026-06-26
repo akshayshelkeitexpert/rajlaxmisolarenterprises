@@ -1,0 +1,20 @@
+Free stock sources (Unsplash + Pexels licences). Direct download URLs used for this project:
+
+Main product grid (Services page) and matching service detail pages (/services/...):
+- grid-solar-modules.jpg — https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg
+- grid-inverters.jpg — https://images.unsplash.com/photo-1558618666-fcd25c85cd64
+- grid-cables.jpg — https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg
+- grid-acdb.jpg — https://images.unsplash.com/photo-1581094794329-c8112a89af12
+- grid-meters.jpg — https://images.pexels.com/photos/693054/pexels-photo-693054.jpeg
+- grid-bos.jpg — https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg
+- grid-retail.jpg — https://images.pexels.com/photos/3829603/pexels-photo-3829603.jpeg
+
+Alt service cards:
+- services-1.jpg — https://images.unsplash.com/photo-1581092160562-40aa08e78837
+- services-2.jpg — https://images.pexels.com/photos/8853504/pexels-photo-8853504.jpeg
+- services-3.jpg — https://images.pexels.com/photos/756723/pexels-photo-756723.jpeg
+- services-4.jpg — https://images.unsplash.com/photo-1613665813446-82a78c468a1d
+
+Also features-3.jpg (Technical highlights) — https://images.pexels.com/photos/256888/pexels-photo-256888.jpeg
+
+Append ?auto=compress&cs=tinysrgb&w=1200 (Pexels) or ?w=1200&q=85 (Unsplash) as needed for size.

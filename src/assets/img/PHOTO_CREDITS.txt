@@ -1,0 +1,9 @@
+Stock photography used on this site (free licences):
+
+- Unsplash — https://unsplash.com/license
+  Photos from images.unsplash.com (solar panels, industrial, warehouse, construction, renewable energy themes).
+
+- Pexels — https://www.pexels.com/license/
+  Photos from images.pexels.com (solar arrays, rooftop install, retail, portraits).
+
+Replace or extend this file if you swap images. Keep photographer attribution in your “About” or legal page if your counsel requires it.

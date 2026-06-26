@@ -1,0 +1,31 @@
+import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { SolarModulesPageComponent } from './pages/service-details/solar-modules-page/solar-modules-page.component';
+import { OnGridInvertersPageComponent } from './pages/service-details/on-grid-inverters-page/on-grid-inverters-page.component';
+import { CablesConnectorsPageComponent } from './pages/service-details/cables-connectors-page/cables-connectors-page.component';
+import { AcdbDcdbPageComponent } from './pages/service-details/acdb-dcdb-page/acdb-dcdb-page.component';
+import { EnergyMetersPageComponent } from './pages/service-details/energy-meters-page/energy-meters-page.component';
+import { BosWalkwaysPageComponent } from './pages/service-details/bos-walkways-page/bos-walkways-page.component';
+import { RajlaxmiElectronicsPageComponent } from './pages/service-details/rajlaxmi-electronics-page/rajlaxmi-electronics-page.component';
+import { TermsOfServiceComponent } from './pages/legal/terms-of-service/terms-of-service.component';
+import { PrivacyPolicyComponent } from './pages/legal/privacy-policy/privacy-policy.component';
+
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'services/solar-modules', component: SolarModulesPageComponent },
+  { path: 'services/on-grid-inverters', component: OnGridInvertersPageComponent },
+  { path: 'services/cables-connectors', component: CablesConnectorsPageComponent },
+  { path: 'services/acdb-dcdb', component: AcdbDcdbPageComponent },
+  { path: 'services/energy-meters', component: EnergyMetersPageComponent },
+  { path: 'services/bos-walkways', component: BosWalkwaysPageComponent },
+  { path: 'services/rajlaxmi-electronics', component: RajlaxmiElectronicsPageComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'terms-of-service', component: TermsOfServiceComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: '**', redirectTo: '' },
+];

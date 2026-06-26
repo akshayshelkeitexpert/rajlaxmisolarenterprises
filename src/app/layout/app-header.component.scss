@@ -1,0 +1,39 @@
+/* Rajlaxmi Solar Enterprises — logo lockup */
+.logo--rse .sitename {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+  line-height: 1.12;
+}
+
+.logo-line--primary {
+  font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--heading-color, #1a2e22);
+}
+
+.logo-raj {
+  color: inherit;
+}
+
+.logo-solar {
+  color: var(--accent-color, #0eb02a);
+}
+
+.logo-line--secondary {
+  font-size: clamp(0.62rem, 1.6vw, 0.72rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color, #3d5248) 88%, transparent);
+}
+
+@media (max-width: 1199px) {
+  .logo--rse .sitename {
+    align-items: center;
+    text-align: center;
+  }
+}

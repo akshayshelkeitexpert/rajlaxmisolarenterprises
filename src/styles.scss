@@ -1,0 +1,267 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* =============================================================================
+   SolarSales — global theme (matches header: #f5fbf7 bg, #0eb02a accent)
+   Loaded after main.css via angular.json; these :root rules override the template.
+   ============================================================================= */
+
+:root {
+  /* Core page */
+  --background-color: #f5fbf7;
+  --default-color: #3d5248;
+  --heading-color: #1a2e22;
+  --accent-color: #0eb02a;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  /* Nav defaults (header .solar-chrome still tightens these) */
+  --nav-color: #0eb02a;
+  --nav-hover-color: #0a9424;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ecfdf3;
+  --nav-dropdown-color: #0eb02a;
+  --nav-dropdown-hover-color: #0a9424;
+
+  /* Bootstrap 5 — buttons, alerts, etc. */
+  --bs-primary: #0eb02a;
+  --bs-primary-rgb: 14, 176, 42;
+  --bs-link-color: #0eb02a;
+  --bs-link-hover-color: #0a9424;
+}
+
+/* Alternate section striping */
+.light-background {
+  --background-color: #e8f5ee;
+  --surface-color: #ffffff;
+}
+
+/* Dark sections (footer, etc.) — keep rich dark */
+.dark-background {
+  --background-color: #0f1f18;
+  --default-color: rgba(240, 247, 244, 0.92);
+  --heading-color: #f5faf8;
+  --surface-color: #1a2e24;
+  --accent-color: #0eb02a;
+  --contrast-color: #ffffff;
+}
+
+/* Inner-page hero only (About / Services / Contact) — lighter, friendlier green */
+.page-title.dark-background {
+  --heading-color: #ffffff;
+  --default-color: rgba(255, 255, 255, 0.92);
+  --accent-color: #e8fdf0;
+  --surface-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(155deg, #5cad7e 0%, #4a9668 42%, #3a7d54 100%) !important;
+  color: var(--default-color);
+}
+
+.page-title.dark-background h1 {
+  color: var(--heading-color);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.page-title.dark-background p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.page-title.dark-background a,
+.page-title.dark-background a:focus {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.page-title.dark-background a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-title.dark-background .breadcrumbs ol li + li::before {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.page-title.dark-background .breadcrumbs .current {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Header — same palette, slightly brighter bar */
+.header.solar-chrome {
+  --background-color: #f5fbf7;
+  --default-color: #2d3d35;
+  --heading-color: #1a2e22;
+  --accent-color: #0eb02a;
+  --contrast-color: #ffffff;
+  --nav-color: #0eb02a;
+  --nav-hover-color: #0a9424;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ecfdf3;
+  --nav-dropdown-color: #0eb02a;
+  --nav-dropdown-hover-color: #0a9424;
+}
+
+.scrolled .header.solar-chrome {
+  --background-color: #ffffff;
+  box-shadow: 0 2px 16px rgba(14, 176, 42, 0.12);
+}
+
+/* Mobile nav: compact dropdown height (override eBusiness full-viewport panel) */
+@media (max-width: 1199px) {
+  body.mobile-nav-active .navmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 4.25rem 0.75rem 1rem;
+    background: rgba(33, 37, 41, 0.45);
+  }
+
+  body.mobile-nav-active .navmenu > ul {
+    position: relative !important;
+    inset: auto !important;
+    width: min(17rem, calc(100vw - 1.5rem)) !important;
+    max-height: none;
+    height: auto !important;
+    margin: 0 !important;
+    flex: 0 0 auto;
+    overflow-y: visible;
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Footer — same dark + green accent (no gold) */
+.footer.solar-footer.dark-background {
+  --background-color: #0c1712;
+  --default-color: rgba(232, 244, 240, 0.9);
+  --heading-color: #f5faf8;
+  --surface-color: #152820;
+  --accent-color: #0eb02a;
+  --contrast-color: #ffffff;
+}
+
+/* Bootstrap primary buttons / links use compiled blue unless overridden */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0eb02a;
+  --bs-btn-border-color: #0eb02a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0a9424;
+  --bs-btn-hover-border-color: #0a9424;
+  --bs-btn-focus-shadow-rgb: 14, 176, 42;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #088c1f;
+  --bs-btn-active-border-color: #088c1f;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #0eb02a;
+  --bs-btn-border-color: #0eb02a;
+  --bs-btn-hover-bg: #0eb02a;
+  --bs-btn-hover-border-color: #0eb02a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: #0a9424;
+  --bs-btn-active-border-color: #0a9424;
+  --bs-btn-active-color: #fff;
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: rgba(14, 176, 42, var(--bs-text-opacity, 1)) !important;
+}
+
+.border-primary {
+  border-color: #0eb02a !important;
+}
+
+/* Service detail pages — hero image beside copy */
+.service-detail-photo {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem rgba(26, 46, 34, 0.12);
+}
+
+.service-detail-photo img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+/* Service detail — white info card (left column) */
+.service-detail-info-card.card {
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0 0.25rem 1.25rem rgba(26, 46, 34, 0.1);
+  border: 1px solid rgba(61, 82, 72, 0.12);
+}
+
+.service-detail-info-card .card-body > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Service detail — right column (image) */
+.service-detail-media-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .service-detail-media-col {
+    position: sticky;
+    top: 5.5rem;
+  }
+}
+
+/* Service detail — full-width enquiry bar at bottom */
+.service-detail-enquiry-bar .card-body {
+  align-items: stretch;
+}
+
+.service-detail-enquiry-bar__text {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--default-color, #3d5248);
+  flex: 1;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .service-detail-enquiry-bar__text {
+    flex: 1 1 auto;
+  }
+
+  .service-detail-enquiry-bar__btn {
+    min-width: 10rem;
+  }
+}
+
+/* Service detail — stack cards under main copy / under image */
+.service-detail-stack-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading-color, #1a2e22);
+  margin-bottom: 0.85rem;
+}
+
+.service-detail-stack-card ul {
+  padding-left: 1.15rem;
+  margin-bottom: 0;
+}
+
+.service-detail-stack-card li + li {
+  margin-top: 0.4rem;
+}
+
+.service-detail-trust-card {
+  background: linear-gradient(180deg, #f8fdf9 0%, #fff 100%);
+  border: 1px solid rgba(14, 176, 42, 0.22) !important;
+}
+
+.service-detail-trust-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-detail-trust-card p:last-child {
+  margin-bottom: 0;
+}
+

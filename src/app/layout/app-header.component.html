@@ -1,0 +1,33 @@
+<header id="header" class="header solar-chrome d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a routerLink="/" class="logo logo--rse d-flex align-items-center me-auto">
+      <h1 class="sitename m-0">
+        <span class="logo-line logo-line--primary">
+          <span class="logo-raj">Rajlaxmi</span> <span class="logo-solar">Solar</span>
+        </span>
+        <span class="logo-line logo-line--secondary">Enterprises</span>
+      </h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li>
+          <a
+            routerLink="/services"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ paths: 'subset', queryParams: 'ignored', fragment: 'ignored', matrixParams: 'ignored' }"
+            >Services</a
+          >
+        </li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <a class="btn-getstarted" routerLink="/contact">Get a quote</a>
+  </div>
+</header>
