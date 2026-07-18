@@ -31,9 +31,58 @@
   color: color-mix(in srgb, var(--default-color, #3d5248) 88%, transparent);
 }
 
+.header-social {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: 1rem;
+}
+
+.header-social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.header-social__link:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  opacity: 0.95;
+}
+
+.header-social__link--instagram {
+  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 45%, #8134af 100%);
+  box-shadow: 0 0.25rem 0.7rem rgba(221, 42, 123, 0.28);
+}
+
+.header-social__link--whatsapp {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  box-shadow: 0 0.25rem 0.7rem rgba(37, 211, 102, 0.28);
+}
+
 @media (max-width: 1199px) {
   .logo--rse .sitename {
     align-items: center;
     text-align: center;
+  }
+
+  .header-social {
+    margin-left: 0.5rem;
+    order: 2;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-social__link {
+    width: 1.95rem;
+    height: 1.95rem;
+    font-size: 0.95rem;
   }
 }

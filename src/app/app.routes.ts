@@ -5,6 +5,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SolarModulesPageComponent } from './pages/service-details/solar-modules-page/solar-modules-page.component';
 import { OnGridInvertersPageComponent } from './pages/service-details/on-grid-inverters-page/on-grid-inverters-page.component';
+import { HybridSystemsPageComponent } from './pages/service-details/hybrid-systems-page/hybrid-systems-page.component';
 import { CablesConnectorsPageComponent } from './pages/service-details/cables-connectors-page/cables-connectors-page.component';
 import { AcdbDcdbPageComponent } from './pages/service-details/acdb-dcdb-page/acdb-dcdb-page.component';
 import { EnergyMetersPageComponent } from './pages/service-details/energy-meters-page/energy-meters-page.component';
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'services/solar-modules', component: SolarModulesPageComponent },
   { path: 'services/on-grid-inverters', component: OnGridInvertersPageComponent },
+  { path: 'services/hybrid-systems', component: HybridSystemsPageComponent },
   { path: 'services/cables-connectors', component: CablesConnectorsPageComponent },
   { path: 'services/acdb-dcdb', component: AcdbDcdbPageComponent },
   { path: 'services/energy-meters', component: EnergyMetersPageComponent },
